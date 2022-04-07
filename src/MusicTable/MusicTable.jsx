@@ -52,7 +52,6 @@ const MusicTable = (props) => {
 
     return ( 
         <div>
-            <h1>My Playlist</h1>
             <DisplayMusic />
             <button onClick={makeGetRequest}>Reload Playlist</button>
         </div>

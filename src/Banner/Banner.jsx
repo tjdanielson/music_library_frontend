@@ -27,7 +27,11 @@ const Banner = (props) => {
     }
 
     return ( 
-        <button onClick={makePostRequest}>add new song</button>
+        <div>
+            <h1>My Playlist</h1>
+            <button onClick={makePostRequest}>add new song</button>
+        </div>
+
      );
 }
  
