@@ -1,0 +1,110 @@
+html {
+    background-color: rgb(10, 40, 63);
+    color: rgb(153, 217, 140);
+}
+
+.full-wrapper {
+    background-color: rgb(10, 40, 63);
+    color: rgb(153, 217, 140);
+}
+
+.full-wrapper button {
+    border-radius: 4px;
+    background-color: rgb(153, 217, 140);
+    color: rgb(24, 78, 119);
+}
+
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    margin-left: 15%;
+}
+
+.banner-container button {
+    margin-left: 6em;
+}
+
+
+.form-group {
+    margin: 1em;;
+}
+
+
+.form-group label {
+    margin-right: .5em;
+}
+
+.my-form {
+    border-color: lightgrey;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px 5px lightgray;
+}
+
+.my-form button {
+    margin-bottom: 1em;
+    border-width: 0px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 30%;
+    margin-right: 20%;
+}
+
+.search-bar-container input {
+    margin-right: 1em;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.my-table {
+    width: 70%;
+    margin-top: 1em;
+    border-collapse: collapse;
+    
+}
+
+.table-body tr {
+    border-color: rgb(22, 138, 173);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.table-body td {
+    padding: .5em;
+    
+}
+
+.reload-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container img {
+    opacity: 10%;
+}
+
+
+

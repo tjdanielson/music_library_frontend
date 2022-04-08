@@ -34,7 +34,7 @@ const MusicTable = (props) => {
     const DisplayMusic = () => {
 
         return (
-            <table className='table'>
+            <table className='my-table'>
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -45,11 +45,10 @@ const MusicTable = (props) => {
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className='table-body'>
                     {MusicLibrary.map((song, i) => {
                         return (
                             <tr key={i}>
-                                <td>{song.id}</td>
                                 <td>{song.title}</td>
                                 <td>{song.artist}</td>
                                 <td>{song.album}</td>
@@ -68,8 +67,12 @@ const MusicTable = (props) => {
     return ( 
         <div>
             <SearchBar MusicLibrary={MusicLibrary} setMusicLibrary={setMusicLibrary}/>
-            <DisplayMusic />
-            <button onClick={makeGetRequest}>Reload Playlist</button>
+            <div className='table-container'>
+                <DisplayMusic />
+            </div>
+            <div className='reload-button-container'>
+                <button onClick={makeGetRequest}>Reload Playlist</button>
+            </div>
         </div>
         
      );

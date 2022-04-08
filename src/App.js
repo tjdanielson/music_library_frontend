@@ -1,12 +1,13 @@
 import MusicTable from "./MusicTable/MusicTable";
 import Banner from "./Banner/Banner";
-import SearchBar from "./SearchBar/SearchBar";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <div>
+    <div className='full-wrapper'>
       <Banner />
       <MusicTable />
+      <Footer />
     </div>
   );
 }

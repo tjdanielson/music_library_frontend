@@ -17,7 +17,7 @@ const SearchBar = (props) => {
     }
     
     return ( 
-        <div>
+        <div className='search-bar-container'>
             <form onSubmit={makeGetRequest}>
                 <input type='text' value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
                 <button type='submit'>Filter</button>
