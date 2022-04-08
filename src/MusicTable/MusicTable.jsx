@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from 'axios';
+import SearchBar from "../SearchBar/SearchBar";
 
 const MusicTable = (props) => {
 
@@ -18,17 +19,31 @@ const MusicTable = (props) => {
         }
     }
 
+    debugger;
+
+    
+
     const DisplayMusic = () => {
 
         return (
             <table className='table'>
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Artist</th>
-                        <th>Album</th>
-                        <th>Release Date</th>
-                        <th>Genre</th>
+                        <th>Title 
+                            
+                        </th>
+                        <th>Artist
+                            
+                        </th>
+                        <th>Album
+                            
+                        </th>
+                        <th>Release Date
+                           
+                        </th>
+                        <th>Genre
+                            
+                        </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -52,13 +67,14 @@ const MusicTable = (props) => {
 
     return ( 
         <div>
+            <SearchBar MusicLibrary={MusicLibrary} setMusicLibrary={setMusicLibrary}/>
             <DisplayMusic />
             <button onClick={makeGetRequest}>Reload Playlist</button>
         </div>
         
-
-        
      );
+
+     debugger;
 }
  
 export default MusicTable;

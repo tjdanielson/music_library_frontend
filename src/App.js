@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <Banner />
-      <SearchBar />
       <MusicTable />
     </div>
   );
