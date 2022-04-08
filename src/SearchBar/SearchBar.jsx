@@ -14,6 +14,7 @@ const SearchBar = (props) => {
         } catch (ex) {
             console.log('Oh no something didn\'t work right :(');
         }
+        setSearchTerm('')
     }
     
     return ( 
