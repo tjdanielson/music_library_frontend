@@ -102,7 +102,7 @@ html {
     margin-top: 2em;
 }
 
-.video-wrapper {
+.iframe-container {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -14,12 +14,14 @@ function App() {
     <div className='full-wrapper'>
       <Banner />
       <MusicTable setSongUrl={setSongUrl}/>
-      <iframe
-            src={`https://www.youtube.com/embed/${songUrl}`}
-            allow="autoplay"
-            allowFullScreen
-            title="video"
-            />
+      <div className="iframe-container">
+        <iframe
+              src={`https://www.youtube.com/embed/${songUrl}`}
+              allow="autoplay"
+              allowFullScreen
+              title="video"
+              />
+      </div>
       <div className='bottom-wrapper'>
         <Footer />
       </div>
