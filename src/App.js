@@ -16,7 +16,7 @@ function App() {
       <MusicTable setSongUrl={setSongUrl}/>
       <div className="iframe-container">
         <iframe
-              src={`https://www.youtube.com/embed/${songUrl}`}
+              src={`https://www.youtube.com/embed/${songUrl}?&autoplay=1`}
               allow="autoplay"
               allowFullScreen
               title="video"
