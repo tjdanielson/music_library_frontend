@@ -36,7 +36,7 @@ const UpdateSong = (props) => {
     async function makePutRequest(updatedSong){
         let response = await axios.put(`http://127.0.0.1:8000/api/music/${updatedSong.id}/`, updatedSong);
         if(response.status === 200){
-            console.log(response.data)
+            alert(`${updatedSong.title} updated.`)
         } else {
             console.log('something did not work')
         }

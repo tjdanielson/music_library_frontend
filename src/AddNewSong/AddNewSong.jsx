@@ -30,7 +30,6 @@ const AddNewSong = (props) => {
             release_date: releaseDate,
             genre: genre,
         };
-        console.log(newSong)
         setTitle('')
         setArtist('')
         setAlbum('')
