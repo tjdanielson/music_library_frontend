@@ -14,16 +14,16 @@ const UpdateSong = (props) => {
         handleSubmit(event)
     }
 
-    const [title, setTitle] = useState('');
-    const [artist, setArtist] = useState('');
-    const [album, setAlbum] = useState('');
-    const [releaseDate, setReleaseDate] = useState('');
-    const [genre, setGenre] = useState('');
+    const [title, setTitle] = useState(props.song.title);
+    const [artist, setArtist] = useState(props.song.artist);
+    const [album, setAlbum] = useState(props.song.album);
+    const [releaseDate, setReleaseDate] = useState(props.song.releaseDate);
+    const [genre, setGenre] = useState(props.song.genre);
 
     function handleSubmit(event) {
         event.preventDefault();
         let updatedSong = {
-            id: props.songIdproperty,
+            id: props.song.id,
             title: title,
             artist: artist,
             album: album,
