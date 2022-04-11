@@ -19,6 +19,7 @@ const UpdateSong = (props) => {
     const [album, setAlbum] = useState(props.song.album);
     const [releaseDate, setReleaseDate] = useState(props.song.releaseDate);
     const [genre, setGenre] = useState(props.song.genre);
+    const [youtubeId, setYoutubeId] = useState(props.song.youtube_id)
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -29,6 +30,7 @@ const UpdateSong = (props) => {
             album: album,
             release_date: releaseDate,
             genre: genre,
+            youtube_id: youtubeId,
         };
         makePutRequest(updatedSong)
     }
@@ -73,6 +75,10 @@ const UpdateSong = (props) => {
                         <div className='form-group'>
                             <label>Genre</label>
                             <input type='text' value={genre} onChange={(event) => setGenre(event.target.value)} />
+                        </div>
+                        <div className='form-group'>
+                            <label>Youtube ID</label>
+                            <input type='text' value={youtubeId} onChange={(event) => setYoutubeId(event.target.value)} />
                         </div>
                     </form>
                 </div>

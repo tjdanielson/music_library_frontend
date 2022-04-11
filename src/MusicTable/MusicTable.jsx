@@ -3,6 +3,7 @@ import axios from 'axios';
 import SearchBar from "../SearchBar/SearchBar";
 import DeleteSong from "../DeleteSong/DeleteSong";
 import UpdateSong from "../UpdateSong/UpdateSong";
+import PlaySong from "../PlaySong/PlaySong";
 
 const MusicTable = (props) => {
 
@@ -17,6 +18,7 @@ const MusicTable = (props) => {
         try{
             let response = await axios.get('http://127.0.0.1:8000/api/music/');
             setMusicLibrary(response.data)
+            console.log(response.data)
         } catch (ex) {
             console.log('Oh no something didn\'t work right :(');
         }
@@ -41,6 +43,7 @@ const MusicTable = (props) => {
                     {MusicLibrary.map((song, i) => {
                         return (
                             <tr key={i}>
+                                <td><PlaySong song={song} setSongUrl={props.setSongUrl}/></td>
                                 <td>{song.title}</td>
                                 <td>{song.artist}</td>
                                 <td>{song.album}</td>

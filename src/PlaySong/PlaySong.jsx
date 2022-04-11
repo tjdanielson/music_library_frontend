@@ -2,18 +2,17 @@ import React, {useState} from "react";
 
 const PlaySong = (props) => {
 
-    const [songUrl, setSongUrl] = useState('TOypSnKFHrE')
     
+    const LoadVideo = () => {
+
+        props.setSongUrl(props.song.youtube_id)
+
+    }
     
     return (  
-        <div className="video-wrapper">
-            <iframe
-            src={`https://www.youtube.com/embed/${songUrl}`}
-            allow="autoplay"
-            allowFullScreen
-            title="video"
-            />
-      </div>
+        <div>
+            <button onClick={LoadVideo}>Play</button>
+        </div>
     );
 }
  
