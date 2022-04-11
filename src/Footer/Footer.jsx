@@ -1,4 +1,5 @@
 import React from "react";
+import PlaySong from "../PlaySong/PlaySong";
 
 const Footer = () => {
     return ( 

@@ -102,6 +102,13 @@ html {
     margin-top: 2em;
 }
 
+.video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
 .bottom-wrapper {
     display: flex;
     align-items: center;
