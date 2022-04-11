@@ -23,7 +23,7 @@ const DeleteSong = (props) => {
             let response = await axios.delete(`http://127.0.0.1:8000/api/music/${props.songIdproperty}`);
             alert(`Song: ${props.songIdproperty} deleted`)
         } catch (ex) {
-            console.log('Oh no something didn\'t work right :(');
+            alert('Error. Song not deleted. Please try again.');
         }
     }
 

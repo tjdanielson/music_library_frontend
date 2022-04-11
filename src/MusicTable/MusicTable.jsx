@@ -22,15 +22,6 @@ const MusicTable = (props) => {
         }
     }
 
-    async function makeGetRequest(){
-        try{
-            let response = await axios.get('http://127.0.0.1:8000/api/music/');
-            setMusicLibrary(response.data)
-        } catch (ex) {
-            console.log('Oh no something didn\'t work right :(');
-        }
-    }
-
 
     const DisplayMusic = () => {
 
@@ -78,8 +69,6 @@ const MusicTable = (props) => {
         </div>
         
      );
-
-     debugger;
 }
  
 export default MusicTable;

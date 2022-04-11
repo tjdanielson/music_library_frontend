@@ -38,7 +38,7 @@ const UpdateSong = (props) => {
         if(response.status === 200){
             alert(`${updatedSong.title} updated.`)
         } else {
-            console.log('something did not work')
+            alert('Error: Please double check your song updates and try again.')
         }
     }
 

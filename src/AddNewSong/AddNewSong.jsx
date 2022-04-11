@@ -42,9 +42,9 @@ const AddNewSong = (props) => {
 
         let response = await axios.post('http://127.0.0.1:8000/api/music/', newSong);
         if(response.status === 201){
-            console.log(response.data)
+            alert(`${newSong.title} added.`)
         } else {
-            console.log('something did not work')
+            alert('Error. Please check your song details and try again.')
         }
     }
     
