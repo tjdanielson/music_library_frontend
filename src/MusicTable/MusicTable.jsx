@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from 'axios';
 import SearchBar from "../SearchBar/SearchBar";
 import DeleteSong from "../DeleteSong/DeleteSong";
+import UpdateSong from "../UpdateSong/UpdateSong";
 
 const MusicTable = (props) => {
 
@@ -55,6 +56,7 @@ const MusicTable = (props) => {
                                 <td>{song.release_date}</td>
                                 <td>{song.genre}</td>
                                 <td><DeleteSong songIdproperty={song.id}/></td>
+                                <td><UpdateSong /></td>
                             </tr>
                             )}   
                         )
