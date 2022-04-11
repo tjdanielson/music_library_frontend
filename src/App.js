@@ -1,13 +1,17 @@
 import MusicTable from "./MusicTable/MusicTable";
 import Banner from "./Banner/Banner";
 import Footer from "./Footer/Footer";
+import AddNewSong from "./AddNewSong/AddNewSong";
 
 function App() {
   return (
     <div className='full-wrapper'>
       <Banner />
       <MusicTable />
-      <Footer />
+      <div className='bottom-wrapper'>
+        <AddNewSong />
+        <Footer />
+      </div>
     </div>
   );
 }

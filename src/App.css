@@ -38,21 +38,17 @@ html {
 }
 
 .my-form {
-    border-color: lightgrey;
+    border-color: rgb(22, 138, 173);
     border-style: solid;
     display: flex;
     justify-content: center;
-    margin-top: 1em;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 1em;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px 5px lightgray;
 }
 
 .my-form button {
     margin-bottom: 1em;
     border-width: 0px;
+    margin-left: 1em;
 }
 
 .search-bar-container {
@@ -96,10 +92,15 @@ html {
     margin-top: 2em;
 }
 
-.footer-container {
+.bottom-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+
 }
 
 .footer-container img {
