@@ -10,7 +10,6 @@ function App() {
       <Banner />
       <MusicTable />
       <div className='bottom-wrapper'>
-        <AddNewSong />
         <Footer />
       </div>
     </div>
