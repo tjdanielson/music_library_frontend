@@ -44,7 +44,7 @@ const UpdateSong = (props) => {
 
     return ( 
         <>
-        <Button variant="primary" onClick={handleShow}>
+        <Button className="modal-button" variant="primary" onClick={handleShow}>
           Update
         </Button>
         <Modal show={show} onHide={handleClose}>

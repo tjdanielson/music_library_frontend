@@ -14,6 +14,12 @@ html {
     color: rgb(24, 78, 119);
 }
 
+.full-wrapper button:hover {
+    background-color: rgb(3, 107, 252);
+    color: white;
+}
+
+
 
 .banner-container {
     display: flex;
@@ -84,6 +90,12 @@ html {
 .table-body td {
     padding: .5em;
     
+}
+
+.modal-button {
+    border-color: gray;
+    
+
 }
 
 .reload-button-container {
