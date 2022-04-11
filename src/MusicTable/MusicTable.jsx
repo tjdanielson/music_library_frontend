@@ -27,6 +27,35 @@ const MusicTable = (props) => {
 
     const DisplayMusic = () => {
 
+        let mediaQueryCondition = window.matchMedia('( max-width: 700px )')
+
+        if (mediaQueryCondition.matches) {
+            return (
+                <table className='my-table'>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Title</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody className='table-body'>
+                    {MusicLibrary.map((song, i) => {
+                        return (
+                            <tr key={i}>
+                                <td><PlaySong song={song} setSongUrl={props.setSongUrl}/></td>
+                                <td>{song.title}</td>
+                                <td><DeleteSong songIdproperty={song.id}/></td>
+                                <td><UpdateSong song={song}/></td>
+                            </tr>
+                            )}   
+                        )
+                    }
+                </tbody>
+            </table>
+        );
+        } else {
+            
         return (
             <table className='my-table'>
                 <thead>
@@ -59,6 +88,8 @@ const MusicTable = (props) => {
                 </tbody>
             </table>
         );
+        }
+
     }
 
     return ( 
