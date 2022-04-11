@@ -12,10 +12,14 @@ html {
     border-radius: 4px;
     background-color: rgb(153, 217, 140);
     color: rgb(24, 78, 119);
+    padding: .25em;
+    border-color: rgb(52, 160, 164);
+    border-style: solid;
+    border-width: 1px;
 }
 
 .full-wrapper button:hover {
-    background-color: rgb(3, 107, 252);
+    background-color: rgb(22, 138, 173);
     color: white;
 }
 
@@ -90,12 +94,6 @@ html {
 .table-body td {
     padding: .5em;
     
-}
-
-.modal-button {
-    border-color: gray;
-    
-
 }
 
 .reload-button-container {
