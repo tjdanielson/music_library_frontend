@@ -10,8 +10,8 @@ const PlaySong = (props) => {
     }
     
     return (  
-        <div>
-            <button onClick={LoadVideo}>Play</button>
+        <div className="play-button">
+            <button onClick={LoadVideo}><img src="./assets/play.png"/></button>
         </div>
     );
 }

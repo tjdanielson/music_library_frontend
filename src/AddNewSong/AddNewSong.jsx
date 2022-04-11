@@ -20,6 +20,7 @@ const AddNewSong = (props) => {
     const [album, setAlbum] = useState('');
     const [releaseDate, setReleaseDate] = useState('');
     const [genre, setGenre] = useState('');
+    const [youtubeId, setYoutubeId] = useState('');
 
     function handleSumbit(event) {
         event.preventDefault();
@@ -29,12 +30,14 @@ const AddNewSong = (props) => {
             album: album,
             release_date: releaseDate,
             genre: genre,
+            youtube_id: youtubeId
         };
         setTitle('')
         setArtist('')
         setAlbum('')
         setReleaseDate('')
         setGenre('')
+        setYoutubeId('')
         makePostRequest(newSong)
     }
 
@@ -81,6 +84,10 @@ const AddNewSong = (props) => {
                         <div className='form-group'>
                             <label>Genre</label>
                             <input type='text' value={genre} onChange={(event) => setGenre(event.target.value)} />
+                        </div>
+                        <div className='form-group'>
+                            <label>YouTube ID</label>
+                            <input type='text' value={youtubeId} onChange={(event) => setYoutubeId(event.target.value)} />
                         </div>
                     </form>
                 </div>

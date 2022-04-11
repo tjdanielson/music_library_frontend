@@ -24,7 +24,6 @@ html {
 }
 
 
-
 .banner-container {
     display: flex;
     align-items: center;
@@ -76,6 +75,28 @@ html {
 .table-container {
     display: flex;
     justify-content: center;
+}
+
+.play-button {
+    display: flex;
+}
+
+.play-button button {
+    background-color: rgb(10, 40, 63);
+    padding: 0em;
+    margin: 0em;
+    border-width: 0px;
+}
+
+.play-button button:hover {
+    background-color: rgb(10, 40, 63);
+}
+
+.play-button img {
+    height: 50%;
+    background-color: rgb(10, 40, 63);
+    padding: 0em;
+    margin: 0em;
 }
 
 .my-table {

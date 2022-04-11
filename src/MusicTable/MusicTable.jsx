@@ -31,6 +31,7 @@ const MusicTable = (props) => {
             <table className='my-table'>
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Title</th>
                         <th>Artist</th>
                         <th>Album</th>
