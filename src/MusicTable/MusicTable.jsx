@@ -18,7 +18,6 @@ const MusicTable = (props) => {
         try{
             let response = await axios.get('http://127.0.0.1:8000/api/music/');
             setMusicLibrary(response.data)
-            console.log(response.data)
         } catch (ex) {
             console.log('Oh no something didn\'t work right :(');
         }
@@ -79,8 +78,8 @@ const MusicTable = (props) => {
                                 <td>{song.album}</td>
                                 <td>{song.release_date}</td>
                                 <td>{song.genre}</td>
-                                <td><DeleteSong songIdproperty={song.id}/></td>
-                                <td><UpdateSong song={song} displayMusic={DisplayMusic}/></td>
+                                <td><DeleteSong songIdproperty={song.id} reloadMusic={makeGetRequest}/></td>
+                                <td><UpdateSong song={song} reloadMusic={makeGetRequest}/></td>
                             </tr>
                             )}   
                         )

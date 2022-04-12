@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import MusicTable from "./MusicTable/MusicTable";
 import Banner from "./Banner/Banner";
 import Footer from "./Footer/Footer";
-import PlaySong from "./PlaySong/PlaySong";
 
 
 function App() {
