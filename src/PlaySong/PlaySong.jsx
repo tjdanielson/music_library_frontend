@@ -11,7 +11,7 @@ const PlaySong = (props) => {
     
     return (  
         <div className="play-button">
-            <button onClick={LoadVideo}><img src="./assets/play.png"/></button>
+            <button onClick={LoadVideo}><img src="./assets/play-removebg-preview.png"/></button>
         </div>
     );
 }

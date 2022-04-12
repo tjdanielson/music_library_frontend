@@ -78,6 +78,7 @@ html {
 
 .play-button {
     display: flex;
+    height: 50%;
 }
 
 .play-button button {
@@ -92,8 +93,7 @@ html {
 }
 
 .play-button img {
-    height: 50%;
-    background-color: rgb(10, 40, 63);
+    height: 70%;
     padding: 0em;
     margin: 0em;
 }
