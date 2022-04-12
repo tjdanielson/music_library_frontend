@@ -18,10 +18,9 @@ const DeleteSong = (props) => {
 
 
     async function makeDeleteRequest(songIdproperty){
-        console.log(props.songIdproperty)
         try{
             let response = await axios.delete(`http://127.0.0.1:8000/api/music/${props.songIdproperty}`);
-            alert(`Song: ${props.songIdproperty} deleted`)
+            alert(`Song deleted`)
             props.reloadMusic()
         } catch (ex) {
             alert('Error. Song not deleted. Please try again.');

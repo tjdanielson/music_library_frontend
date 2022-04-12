@@ -38,7 +38,6 @@ const UpdateSong = (props) => {
     async function makePutRequest(updatedSong){
         let response = await axios.put(`http://127.0.0.1:8000/api/music/${updatedSong.id}/`, updatedSong);
         if(response.status === 200){
-            alert(`${updatedSong.title} updated.`)
             props.reloadMusic()
         } else {
             alert('Error: Please double check your song updates and try again.')

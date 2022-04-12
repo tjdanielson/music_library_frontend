@@ -1,12 +1,12 @@
-html {
-    background-color: rgb(10, 40, 63);
-    color: rgb(153, 217, 140);
-}
+
 
 .full-wrapper {
     background-color: rgb(10, 40, 63);
     background-image: linear-gradient(1deg, rgb(52, 160, 164) 1%, rgb(14, 55, 87) 55%, rgb(10, 40, 63));
     color: rgb(153, 217, 140);
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .full-wrapper button {
@@ -17,6 +17,7 @@ html {
     border-color: rgb(52, 160, 164);
     border-style: solid;
     border-width: 1px;
+    font-size: medium;
 }
 
 .full-wrapper button:hover {
@@ -112,8 +113,7 @@ html {
 }
 
 .table-body td {
-    padding: .5em;
-    
+    padding: .15em;  
 }
 
 .reload-button-container {

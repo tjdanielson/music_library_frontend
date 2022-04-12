@@ -42,13 +42,14 @@ const AddNewSong = (props) => {
     }
 
     async function makePostRequest(newSong){
-
-        let response = await axios.post('http://127.0.0.1:8000/api/music/', newSong);
-        if(response.status === 201){
-            alert(`${newSong.title} added.`)
-            window.location.reload()
-        } else {
-            alert('Error. Please check your song details and try again.')
+        try{
+            let response = await axios.post('http://127.0.0.1:8000/api/music/', newSong);
+            if(response.status === 201){
+              alert(`${newSong.title} added.`)
+              window.location.reload()}
+        } catch (ex) {
+          console.log('error')
+          alert('Error - Please try again. Make sure you fill in all song details!')
         }
     }
     
