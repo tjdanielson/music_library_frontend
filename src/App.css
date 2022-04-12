@@ -5,6 +5,7 @@ html {
 
 .full-wrapper {
     background-color: rgb(10, 40, 63);
+    background-image: linear-gradient(1deg, rgb(52, 160, 164) 1%, rgb(10, 40, 63));
     color: rgb(153, 217, 140);
 }
 
@@ -80,14 +81,14 @@ html {
 }
 
 .play-button button {
-    background-color: rgb(10, 40, 63);
+    background-color: transparent;
     padding: 0em;
     margin: 0em;
     border-width: 0px;
 }
 
 .play-button button:hover {
-    background-color: rgb(10, 40, 63);
+    background-color: transparent;
 }
 
 .play-button img {

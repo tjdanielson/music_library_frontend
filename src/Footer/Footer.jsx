@@ -4,7 +4,7 @@ import PlaySong from "../PlaySong/PlaySong";
 const Footer = () => {
     return ( 
         <div className='footer-container'>
-            <img src='./assets/site_image.png' />
+            <p>© 2022 Tessa Danielson</p>
         </div>
      );
 }
