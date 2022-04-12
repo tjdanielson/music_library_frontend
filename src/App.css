@@ -4,9 +4,11 @@
     background-color: rgb(10, 40, 63);
     background-image: linear-gradient(1deg, rgb(52, 160, 164) 1%, rgb(14, 55, 87) 55%, rgb(10, 40, 63));
     color: rgb(153, 217, 140);
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
 }
 
 .full-wrapper button {
