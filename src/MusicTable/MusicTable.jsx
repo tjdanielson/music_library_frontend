@@ -80,7 +80,7 @@ const MusicTable = (props) => {
                                 <td>{song.release_date}</td>
                                 <td>{song.genre}</td>
                                 <td><DeleteSong songIdproperty={song.id}/></td>
-                                <td><UpdateSong song={song}/></td>
+                                <td><UpdateSong song={song} displayMusic={DisplayMusic}/></td>
                             </tr>
                             )}   
                         )
